@@ -1,9 +1,12 @@
 [submodule "saleor"]
 	path = saleor
-	url = https://github.com/mirumee/saleor.git
+	url = https://github.com/Trusty-Serva/saleor.git
+	branch = feature/subscription
 [submodule "saleor-storefront"]
 	path = saleor-storefront
 	url = https://github.com/mirumee/saleor-storefront.git
+	tag = 3.0.0-b.2
 [submodule "saleor-dashboard"]
 	path = saleor-dashboard
 	url = https://github.com/mirumee/saleor-dashboard.git
+	tag = 3.0.0-b.24
