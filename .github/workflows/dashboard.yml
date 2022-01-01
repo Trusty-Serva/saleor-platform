@@ -25,6 +25,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Replace credentials
+        run: sed -i 's/80/8080/g' saleor-dashboard/nginx/default.conf
+        
       - uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
