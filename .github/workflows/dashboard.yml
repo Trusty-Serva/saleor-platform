@@ -36,5 +36,6 @@ jobs:
           file: ./saleor-dashboard/Dockerfile
           tags: ghcr.io/trusty-serva/saleor-dashboard:latest
           push: true
+          build-args: API_URI=https://trusty-serva/graphql/
           secrets: |
             "github_token=${{ secrets.GITHUB_TOKEN }}"
